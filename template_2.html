@@ -1,0 +1,220 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+	rel="stylesheet">
+<style type="text/css">
+	body {
+		height: 100% !important;
+		margin: 0;
+		padding: 0;
+		width: 100% !important;
+	}
+
+	*,
+	a {
+		font-family: 'PT Sans', sans-serif;
+		text-decoration: none;
+	}
+
+	conteudo-header {
+		max-width: 100%;
+		min-width: 620px;
+	}
+
+	@media only screen and (max-device-width: 480px) {
+		table[class=conteudo] {
+			width: 340px !important;
+			float: center !important;
+		}
+
+		td[class=header] img {
+			height: auto !important;
+			width: 100% !important;
+		}
+	}
+</style>
+<center
+	style=" margin-right: auto; margin-left: auto;max-width: 620px !important; height: max-content; table-layout:fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+	<table style="max-width: 640px !important;" width="100%" height="auto" border="0" cellspacing="0" cellpadding="10"
+		class="conteudo">
+		<tr>
+			<td class="header">
+				<table width="100%" cellpadding="0"
+					style="max-width: 620px !important; background-color: #1F4690; box-shadow: 3px 3px 10px #0000004d; border-radius: 8px 8px 0 0;border-collapse: collapse;min-height: 200px;">
+					<tr style="border:none;">
+						<td width="100%" align="center" style="align-items: center;" colspan="2" height="130px">
+							<img src="http://10.90.0.191:2021/front/document.send.php?docid=2" height="auto" width="90%"
+								alt="logomarca" style="align-items: center;">
+						</td>
+					</tr>
+					<tr style="border:none; border-collapse: collapse; background-color: #fff; color:#1F4690;">
+						<td width="50%" align="center" style="padding-left: 10px; color:#1F4690;font-size:1em;"
+							height="35px">
+							<b>Status: ##ticket.status##</b>
+						</td>
+						<td width="50%" align="center"
+							style="padding-left: 10px; background-color: #fff; color:#1F4690;font-size:1em;">
+							<b>N°: ##ticket.id##</b>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table width="100%" cellpadding="0"
+					style="border-collapse: collapse; font-size: 1em; box-shadow: 3px 3px 5px #0000004d;max-width: 620px !important;">
+					<tr>
+						<td width="620" style="background-color: #36AE7C;">
+							<p style="padding:10px 10px 10px; color: #fff;"><b>Motivo do Chamado:</b> ##ticket.title##
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td width="620" style="background-color: #36AE7C;">
+							<p style="padding:10px 10px 10px; color: #fff;"><b>Requerentes:</b> ##ticket.authors##
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td width="620" style="background-color: #36AE7C;">
+							<p style="padding:10px 10px 10px; color: #fff;"><b>Data Início:</b> ##ticket.creationdate##
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td width="620" style="background-color: #fff;padding:10px 10px 10px;">
+							<p style=" color: black;max-width: 640px !important;">##ticket.content##
+							</p>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table width="100%" cellpadding="0"
+					style="max-width: 620px !important; background-position: right; border-collapse: collapse; font-size: 1em; box-shadow: 3px 3px 5px #0000004d;">
+					<tr>
+						<td align="center" style="padding:5px 5px 5px; background-color: #1F4690;">
+							<a style="text-align: center ;text-decoration:none; color: #FFF; padding:10px 16px; font-weight:bold; margin-right:10px; text-align:center; cursor:pointer; display: inline-block; background-color: #1F4690;"
+								href="##ticket.url##">ACOMPANHE O CHAMADO ONLINE!</a>
+						</td>
+					</tr>
+				</table>
+				<br>
+				##IFticket.storestatus=5##
+				<table width="100%" cellpadding="0"
+					style="border-collapse: collapse; font-size: 1em; box-shadow: 3px 3px 5px #0000004d; max-width: 620px !important;">
+					<tr>
+						<td width="620" colspan="2"
+							style="background-color: #9CB4CC; background-position: right; border-collapse: collapse; color: #fff">
+							<p style="padding:10px 10px 10px;"><b>Solução</b>: ##ticket.solvedate##</p>
+						</td>
+					</tr>
+					<tr style="border-collapse: collapse;">
+						<td style="max-width: 620px !important; padding:10px 10px 10px; max-width: 640px;">
+							<p style="max-width: 620px !important;">##ticket.solution.description##</p>
+						</td>
+					</tr>
+					<tr style="padding:5px 5px 5px; background-color: #1F4690;">
+						<td width="100%" align="center" c>
+							<a href="##ticket.urlapprove##"
+								style="text-decoration:none; color: #fff; padding:10px 10px; font-weight:bold; text-align:center; cursor:pointer; display: inline-block; background-color: #1F4690!important; ">
+								APROVAR SOLUÇÃO</a>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table width="100%" cellpadding="0"
+					style="border-collapse: collapse; font-size: 1em; box-shadow: 3px 3px 5px #0000004d; max-width: 620px !important;">
+					<tr>
+						<td width="620" colspan="2"
+							style="background-color: #EB4747; background-position: right; border-collapse: collapse; color: #fff">
+							<p style="padding:10px 10px 10px;"><b>Última Rejeição da solução</b>:
+								| ##ticket.solution.approval.date## |</p>
+						</td>
+					</tr>
+					<tr style="border-collapse: collapse; max-width: 620px !important;">
+						<td style="max-width: 620px !important; padding:10px 10px 10px; max-width: 620px !important;">
+							<p style="max-width: 620px !important;">##ticket.solution.approval.description##</p>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<p style="text-align: center;max-width: 620px;">##lang.ticket.autoclosewarning##</p>
+				##ENDIFticket.storestatus##
+				##FOREACH LAST 5 documents##
+				<table width="100%" cellpadding="0"
+					style="max-width: 620px !important; background-position: right; border-collapse: collapse; font-size: 1em; box-shadow: 3px 3px 5px #0000004d; color: #fff; max-width: 640px !important;">
+					<tr style="max-width: 620px !important;">
+						<td style="max-width: 620px !important; padding:10px 10px 10px; background-color: #F77E21;">
+							<p><b>Link para download:</b> <a href="##document.downloadurl##">##document.filename##</a>
+							</p>
+						</td>
+					</tr>
+				</table>
+				<br>
+				##ENDFOREACHdocuments##
+
+				##FOREACHfollowups##
+				<table width="100%" cellpadding="0"
+					style="max-width: 620px !important;background-position: right; border-collapse: collapse; font-size: 1em; box-shadow: 3px 3px 5px #0000004d;">
+					<tr>
+						<td style="padding:10px 10px 10px; background-color: #E0E0E0;">
+							<p><b>Acompanhamento</b>: [##followup.date##]</p>
+						</td>
+					</tr>
+					<tr style="border-collapse: collapse;">
+						<td style="padding:10px 10px 10px; background-color: #E0E0E0;" align="left" width="452">
+							<p><b>Autor(a):</b> ##followup.author##</p>
+						</td>
+					</tr>
+					<tr style="border-collapse: collapse;">
+						<td style="padding:10px 10px 10px; background-color: #fff;" align="left" width="620">
+							<p style="max-width: 620px !important;">##followup.description##</p>
+						</td>
+					</tr>
+				</table>
+				<br>
+				##ENDFOREACHfollowups## ##FOREACHtasks##
+				<table width="100%" cellpadding="0"
+					style="max-width: 620px !important; background-color: #E8AA42; background-position: right; border-collapse: collapse; font-size: 1em; box-shadow: 3px 3px 5px #0000004d;">
+					<tr>
+						<td style="padding:10px 10px 10px; color:#fff">
+							<p><b>Tarefa</b>: [##task.date##]</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding:10px 10px 10px; color:#fff">
+							<p><b>Autor: </b>##task.author##</p>
+						</td style="padding:10px 10px 10px;">
+					</tr>
+					<tr>
+						<td style="padding:10px 10px 10px; background-color: #fff;">
+							<p style="max-width: 620px !important;">##task.description##</p>
+						</td>
+					</tr>
+				</table>
+				<br>
+				##ENDFOREACHtasks##
+				<br>
+			</td>
+		</tr>
+	</table>
+	<!--tabela principal, com a largura do documento-->
+	<table width="100%" border="0" cellspacing="0" cellpadding="5" class="conteudo">
+		<tr>
+			<td>
+				<center>
+					<a href="https:suporteti.natal.rn.gov.br" target="_blank"
+						style="border: 0; width: 10%; height:auto; "><img
+							src="http://10.90.0.191:2021/front/document.send.php?docid=3" alt="Logotipo da empresa"></a>
+				</center>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-size: 0.75em !important; color: #4a585e;">
+				<p><b>Todos os direitos reservados a PMN - SEMPLA - Secretaria Adjunta de Tecnologia da Informação.</b>
+				</p>
+			</td>
+		</tr>
+	</table>
+</center>
