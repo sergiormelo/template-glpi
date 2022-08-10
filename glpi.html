@@ -15,6 +15,11 @@
             --branco: #fff;
             --preto: black;
             --verde: #36AE7C;
+            --azul-claro: #9CB4CC;
+            --vermelho: #EB4747;
+            --laranja: #F77E21;
+            --cinza: #E0E0E0;
+            --amarelo: #E8AA42;
         }
 
         body {
@@ -88,7 +93,7 @@
             display: block;
             align-items: center;
             background: var(--azul);
-            padding: 0.4rem;
+            padding: 0.1rem;
             text-align: center;
             margin-top: 1.5rem;
         }
@@ -98,6 +103,107 @@
             color: var(--branco);
             margin: 0 auto;
             text-align: center;
+        }
+
+        .solu_data {
+            display: block;
+            align-items: left;
+            /* justify-content: space-between; */
+            background: var(--azul-claro);
+            color: var(--branco);
+            padding: 0.5rem 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .solu_descricao {
+            display: block;
+            align-items: left;
+            /* justify-content: space-between; */
+            background: var(--branco);
+            color: var(--preto);
+            padding: 0.5rem 1rem;
+        }
+
+        .aprovar {
+            display: block;
+            align-items: center;
+            background: var(--azul);
+            padding: 0.01%;
+            text-align: center;
+            height: auto;
+        }
+
+        .aprovar a {
+            text-decoration: none;
+            color: var(--branco);
+            text-align: center;
+            padding: 0;
+            height: 2rem;
+        }
+
+        .ult_rejeicao {
+            display: block;
+            align-items: left;
+            /* justify-content: space-between; */
+            background: var(--vermelho);
+            color: var(--branco);
+            padding: 0.5rem 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .desc_rejeicao {
+            display: block;
+            align-items: left;
+            /* justify-content: space-between; */
+            background: var(--branco);
+            color: var(--preto);
+            padding: 0.5rem 1rem;
+        }
+
+        .documentos {
+            display: block;
+            align-items: left;
+            /* justify-content: space-between; */
+            background: var(--laranja);
+            color: var(--branco);
+            padding: 0.5rem 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .acompanhar {
+            display: block;
+            align-items: left;
+            /* justify-content: space-between; */
+            background: var(--cinza);
+            color: var(--preto);
+            padding: 0.5rem 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .acom_descricao {
+            display: block;
+            align-items: left;
+            background: var(--branco);
+            color: var(--preto);
+            padding: 0.5rem 1rem;
+        }
+
+        .tarefas {
+            display: block;
+            align-items: left;
+            /* justify-content: space-between; */
+            background: var(--amarelo);
+            color: var(--branco);
+            padding: 0.5rem 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .desc_tarefa {
+            display: block;
+            align-items: left;
+            background: var(--branco);
+            color: var(--preto);
+            padding: 0.5rem 1rem;
         }
     </style>
 </head>
@@ -136,6 +242,62 @@
             </a>
         </div>
     </head>
+    ##IFticket.storestatus=5##
+    <div class="solucao">
+        <div class="solu_data">
+            <p>
+            <h3>Solução: ##ticket.solvedate##</h3>
+            </p>
+        </div>
+        <div class="solu_descricao">
+            <p>##ticket.solution.description##</p>
+        </div>
+        <div class="aprovar">
+            <a href="##ticket.urlapprove##">
+                <h3>APROVAR SOLUÇÃO</h3>
+            </a>
+        </div>
+    </div>
+    <div class="ult_rejeicao">
+        <p>
+        <h3>Última Rejeição da solução:| ##ticket.solution.approval.date## |</h3>
+        </p>
+    </div>
+    <div class="desc_rejeicao">
+        <p>##ticket.solution.approval.description##</p>
+    </div>
+    <p style="text-align: center;max-width: 620px;"><b>##lang.ticket.autoclosewarning##</b></p>
+    ##ENDIFticket.storestatus##
+    ##FOREACH LAST 5 documents##
+    <div class="documentos">
+        <p><b>Link para download:</b> <a href="##document.downloadurl##">##document.filename##</a>
+        </p>
+    </div>
+    ##ENDFOREACHdocuments##
+    ##FOREACHfollowups##
+    <div class="acompanhar">
+        <div class="data_acompanhamento">
+            <h3>Acompanhamento: [##followup.date##]</h3>
+        </div>
+        <div class="autor">
+            <h3>Autor(a): ##followup.author##</h3>
+        </div>
+    </div>
+    <div class="acom_descricao">
+        <p>##followup.description##</p>
+    </div>
+    ##ENDFOREACHfollowups## ##FOREACHtasks##
+    <div class="tarefas">
+        <div class="data_tarefa">
+            <h3>Tarefa: [##task.date##]</h3>
+        </div>
+        <div class="autor_tarefa">
+            <h3>##task.author##</h3>
+        </div>
+    </div>
+    <div class="desc_tarefa">
+        <p>##task.description##</p>
+    </div>
 </body>
 
 </html>
