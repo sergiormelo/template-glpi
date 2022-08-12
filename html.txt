@@ -1,0 +1,96 @@
+<div class="body">
+    <div class="inicio">
+        <img class="logo" src="http://10.90.0.191:2021/front/document.send.php?docid=2" alt="logomarca">
+    </div>
+    <div class=" inicio-status">
+        <div class="status">
+            <h3>Status: ##ticket.status##</h3>
+        </div>
+        <div class="status">
+            <h3>N°: ##ticket.id##</h3>
+        </div>
+    </div>
+    ##IFticket.storestatus=5##
+    <div class="solucao">
+        <div class="solu_data">
+            <h3>Solução: ##ticket.solvedate##</h3>
+        </div>
+        <div class="solu_descricao">
+            <p>##ticket.solution.description##</p>
+        </div>
+            <div class="aprovar">
+                <a href="##ticket.urlapprove##"><button><b>SOLUÇÃO</b></button></a>
+            </div>
+    </div>
+    <p style="text-align: center;"><b>##lang.ticket.autoclosewarning##</b></p>
+    ##ENDIFticket.storestatus##
+    ##IFticket.storestatus=2####FOREACH LAST 1 followups##
+    <div class="acompanhar_last">
+        <div class="data_acompanhamento">
+            <h3>Último acompanhamento: [##followup.date##]</h3>
+        </div>
+        <div class="autor">
+            <h3>Autor(a): ##followup.author##</h3>
+        </div>
+    </div>
+    <div class="acom_descricao">
+        <p>##followup.description##</p>
+    </div>
+    ##ENDFOREACHfollowups####ENDIFticket.storestatus##
+    <div class="chamado">
+        <div class="motivo">
+            <h3>Motivo do Chamado: ##ticket.title##</h3>
+        </div>
+        <div class="requerente">
+            <h3>Requerentes: ##ticket.authors##</h3>
+        </div>
+        <div class="data-inicio">
+            <h3>Data Início: ##ticket.creationdate##</h3>
+        </div>
+    </div>
+    <div class="chamado-content">
+        <p>##ticket.content##</p>
+    </div>
+    <div class="online">
+        <a href="##ticket.url##" target="_blank"><button><b>ACOMPANHE O CHAMADO ONLINE!</b></button></a>
+    </div>
+    ##FOREACH LAST 5 documents##
+    <div class="documentos">
+        <p><b>Link para download:</b> <a href="##document.downloadurl##">##document.filename##</a>
+        </p>
+    </div>
+    ##ENDFOREACHdocuments##
+    ##FOREACHfollowups##
+    <div class="acompanhar">
+        <div class="data_acompanhamento">
+            <h3>Acompanhamento: [##followup.date##]</h3>
+        </div>
+        <div class="autor">
+            <h3>Autor(a): ##followup.author##</h3>
+        </div>
+    </div>
+    <div class="acom_descricao">
+        <p>##followup.description##</p>
+    </div>
+    ##ENDFOREACHfollowups## ##FOREACHtasks##
+    <div class="tarefas">
+        <div class="data_tarefa">
+            <h3>Tarefa: [##task.date##]</h3>
+        </div>
+        <div class="autor_tarefa">
+            <h3>##task.author##</h3>
+        </div>
+    </div>
+    <div class="desc_tarefa">
+        <p>##task.description##</p>
+    </div>
+    ##ENDFOREACHtasks##
+    <div class="rodape">
+        <a href="https:suporteti.natal.rn.gov.br" target="_blank" style="border: 0; width: 10%; height:auto; "><img
+                src="http://10.90.0.191:2021/front/document.send.php?docid=3" Logotipo da empresa"></a>
+    </div>
+    <div class="creditos">
+        <p><b>Todos os direitos reservados a PMN - SEMPLA - Secretaria Adjunta de Tecnologia da Informação.</b>
+        </p>
+    </div>
+</div>

@@ -13,7 +13,6 @@
         .body {
             max-width: 50rem !important;
             height: auto;
-            /* background: orange; */
             margin: 0 auto;
             display: block;
             font-family: 'Roboto Condensed', sans-serif;
@@ -27,8 +26,11 @@
             font-size: 1.1rem;
         }
 
+        .body img {
+            width: 100%;
+        }
+
         .inicio {
-            /* max-width: 50rem; */
             width: 100%;
             height: auto;
             background: #1F4690;
@@ -64,7 +66,6 @@
         .chamado {
             display: block;
             align-items: left;
-            /* justify-content: space-between; */
             background: #36AE7C;
             color: #fff;
             padding: 0.5rem 1rem;
@@ -85,7 +86,6 @@
             display: block;
             align-items: center;
             background: #1F4690;
-            padding: 0.1rem;
             text-align: center;
             margin-top: 1.5rem;
             box-shadow: 3px 3px 10px #0000004d;
@@ -96,12 +96,32 @@
             color: #fff;
             margin: 0 auto;
             text-align: center;
+            font-size: 1.15rem;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .online button {
+            text-decoration: none;
+            color: #fff;
+            background: #1F4690;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.15rem;
+            width: 100%;
+            padding: 1.2rem;
+            border: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            transform: scale(1);
+        }
+
+        .online button:hover {
+            transform: scale(1.008);
+            transition: all 300ms ease-in-out;
         }
 
         .solu_data {
             display: block;
             align-items: left;
-            /* justify-content: space-between; */
             background: #9CB4CC;
             color: #fff;
             padding: 0.5rem 1rem;
@@ -112,7 +132,6 @@
         .solu_descricao {
             display: block;
             align-items: left;
-            /* justify-content: space-between; */
             background: #fff;
             color: black;
             padding: 0.5rem 1rem;
@@ -132,9 +151,29 @@
         .aprovar a {
             text-decoration: none;
             color: #fff;
+            margin: 0 auto;
             text-align: center;
-            padding: 0;
-            height: 2rem;
+            font-size: 1.15rem;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .aprovar button {
+            text-decoration: none;
+            color: #fff;
+            background: #1F4690;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.15rem;
+            width: 100%;
+            padding: 1.2rem;
+            border: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            transform: scale(1);
+        }
+
+        .aprovar button:hover {
+            transform: scale(1.008);
+            transition: all 300ms ease-in-out;
         }
 
         .ult_rejeicao {
@@ -214,7 +253,7 @@
             align-items: center;
             background: #fff;
             color: #fff;
-            padding: 0.5rem 1rem;
+            padding: 1.5rem;
             margin-top: 1.5rem;
             text-align: center;
             box-shadow: 3px 3px 10px #0000004d;
@@ -266,7 +305,21 @@
                 <h3>N°: ##ticket.id##</h3>
             </div>
         </div>
-        ##FOREACH LAST 1 followups##
+        ##IFticket.storestatus=5##
+        <div class="solucao">
+            <div class="solu_data">
+                <h3>Solução: ##ticket.solvedate##</h3>
+            </div>
+            <div class="solu_descricao">
+                <p>##ticket.solution.description##</p>
+            </div>
+            <div class="aprovar">
+                <a href="##ticket.urlapprove##"><button><b>SOLUÇÃO</b></button></a>
+            </div>
+        </div>
+        <p style="text-align: center;"><b>##lang.ticket.autoclosewarning##</b></p>
+        ##ENDIFticket.storestatus##
+        ##IFticket.storestatus=2####FOREACH LAST 1 followups##
         <div class="acompanhar_last">
             <div class="data_acompanhamento">
                 <h3>Último acompanhamento: [##followup.date##]</h3>
@@ -278,7 +331,7 @@
         <div class="acom_descricao">
             <p>##followup.description##</p>
         </div>
-        ##ENDFOREACHfollowups##
+        ##ENDFOREACHfollowups####ENDIFticket.storestatus##
         <div class="chamado">
             <div class="motivo">
                 <h3>Motivo do Chamado: ##ticket.title##</h3>
@@ -294,28 +347,8 @@
             <p>##ticket.content##</p>
         </div>
         <div class="online">
-            <a href="##ticket.url##">
-                <h3>ACOMPANHE O CHAMADO ONLINE!</h3>
-            </a>
+            <a href="##ticket.url##" target="_blank"><button><b>ACOMPANHE O CHAMADO ONLINE!</b></button></a>
         </div>
-        ##IFticket.storestatus=5##
-        <div class="solucao">
-            <div class="solu_data">
-                <p>
-                <h3>Solução: ##ticket.solvedate##</h3>
-                </p>
-            </div>
-            <div class="solu_descricao">
-                <p>##ticket.solution.description##</p>
-            </div>
-            <div class="aprovar">
-                <a href="##ticket.urlapprove##">
-                    <h3>APROVAR SOLUÇÃO</h3>
-                </a>
-            </div>
-        </div>
-        <p style="text-align: center;max-width: 620px;"><b>##lang.ticket.autoclosewarning##</b></p>
-        ##ENDIFticket.storestatus##
         ##FOREACH LAST 5 documents##
         <div class="documentos">
             <p><b>Link para download:</b> <a href="##document.downloadurl##">##document.filename##</a>
@@ -346,9 +379,10 @@
         <div class="desc_tarefa">
             <p>##task.description##</p>
         </div>
+        ##ENDFOREACHtasks##
         <div class="rodape">
             <a href="https:suporteti.natal.rn.gov.br" target="_blank" style="border: 0; width: 10%; height:auto; "><img
-                    src="http://10.90.0.191:2021/front/document.send.php?docid=3" Logotipo da empresa"></a>
+                    src="img/rodape.png" Logotipo da empresa"></a>
         </div>
         <div class="creditos">
             <p><b>Todos os direitos reservados a PMN - SEMPLA - Secretaria Adjunta de Tecnologia da Informação.</b>
