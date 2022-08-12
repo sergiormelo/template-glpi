@@ -10,44 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>GLPI</title>
     <style>
-        :root {
-            --azul: #1F4690;
-            --branco: #fff;
-            --preto: black;
-            --verde: #36AE7C;
-            --azul-claro: #9CB4CC;
-            --vermelho: #EB4747;
-            --laranja: #F77E21;
-            --cinza: #E0E0E0;
-            --amarelo: #E8AA42;
-        }
-
-        body {
-            max-width: 40rem;
+        .body {
+            max-width: 50rem !important;
             height: auto;
-            background: orange;
+            /* background: orange; */
             margin: 0 auto;
             display: block;
             font-family: 'Roboto Condensed', sans-serif;
         }
 
-        body h3 {
-            font-size: 1.09rem;
+        .body h3 {
+            font-size: 1.2rem;
         }
 
-        body p {
-            font-size: 1.05rem;
+        .body p {
+            font-size: 1.1rem;
         }
 
         .inicio {
             /* max-width: 50rem; */
             width: 100%;
             height: auto;
-            background: var(--azul);
+            background: #1F4690;
             margin: 2rem 0 auto;
             display: block;
             align-items: center;
             border-top-right-radius: 0.6rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .logo {
@@ -60,10 +49,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: var(--branco);
-            color: var(--azul);
+            background: #fff;
+            color: #1F4690;
             padding-left: 1rem;
             padding-right: 1rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .status {
@@ -75,32 +65,35 @@
             display: block;
             align-items: left;
             /* justify-content: space-between; */
-            background: var(--verde);
-            color: var(--branco);
+            background: #36AE7C;
+            color: #fff;
             padding: 0.5rem 1rem;
             margin-top: 1.5rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .chamado-content {
             display: block;
             align-items: left;
-            background: var(--branco);
-            color: var(--preto);
+            background: #fff;
+            color: black;
             padding: 0.5rem 1rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .online {
             display: block;
             align-items: center;
-            background: var(--azul);
+            background: #1F4690;
             padding: 0.1rem;
             text-align: center;
             margin-top: 1.5rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .online a {
             text-decoration: none;
-            color: var(--branco);
+            color: #fff;
             margin: 0 auto;
             text-align: center;
         }
@@ -109,33 +102,36 @@
             display: block;
             align-items: left;
             /* justify-content: space-between; */
-            background: var(--azul-claro);
-            color: var(--branco);
+            background: #9CB4CC;
+            color: #fff;
             padding: 0.5rem 1rem;
             margin-top: 1.5rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .solu_descricao {
             display: block;
             align-items: left;
             /* justify-content: space-between; */
-            background: var(--branco);
-            color: var(--preto);
+            background: #fff;
+            color: black;
             padding: 0.5rem 1rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .aprovar {
             display: block;
             align-items: center;
-            background: var(--azul);
+            background: #1F4690;
             padding: 0.01%;
             text-align: center;
             height: auto;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .aprovar a {
             text-decoration: none;
-            color: var(--branco);
+            color: #fff;
             text-align: center;
             padding: 0;
             height: 2rem;
@@ -145,74 +141,122 @@
             display: block;
             align-items: left;
             /* justify-content: space-between; */
-            background: var(--vermelho);
-            color: var(--branco);
+            background: #EB4747;
+            color: #fff;
             padding: 0.5rem 1rem;
             margin-top: 1.5rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .desc_rejeicao {
             display: block;
             align-items: left;
             /* justify-content: space-between; */
-            background: var(--branco);
-            color: var(--preto);
+            background: #fff;
+            color: black;
             padding: 0.5rem 1rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .documentos {
             display: block;
             align-items: left;
             /* justify-content: space-between; */
-            background: var(--laranja);
-            color: var(--branco);
+            background: #F77E21;
+            color: #fff;
             padding: 0.5rem 1rem;
             margin-top: 1.5rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .acompanhar {
             display: block;
             align-items: left;
             /* justify-content: space-between; */
-            background: var(--cinza);
-            color: var(--preto);
+            background: #E0E0E0;
+            color: black;
             padding: 0.5rem 1rem;
             margin-top: 1.5rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .acom_descricao {
             display: block;
             align-items: left;
-            background: var(--branco);
-            color: var(--preto);
+            background: #fff;
+            color: black;
             padding: 0.5rem 1rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .tarefas {
             display: block;
             align-items: left;
             /* justify-content: space-between; */
-            background: var(--amarelo);
-            color: var(--branco);
+            background: #E8AA42;
+            color: #fff;
             padding: 0.5rem 1rem;
             margin-top: 1.5rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
 
         .desc_tarefa {
             display: block;
             align-items: left;
-            background: var(--branco);
-            color: var(--preto);
+            background: #fff;
+            color: black;
             padding: 0.5rem 1rem;
+            box-shadow: 3px 3px 10px #0000004d;
+        }
+
+        .rodape {
+            display: block;
+            align-items: center;
+            background: #fff;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            margin-top: 1.5rem;
+            text-align: center;
+            box-shadow: 3px 3px 10px #0000004d;
+        }
+
+        .rodape img {
+            width: 25%;
+        }
+
+        .creditos {
+            display: block;
+            align-items: center;
+            background: #1F4690;
+            color: #fff;
+            padding: 0.05rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            border-bottom-left-radius: 0.6rem;
+            box-shadow: 3px 3px 10px #0000004d;
+        }
+
+        .creditos p {
+            font-size: 0.8rem;
+        }
+
+        .acompanhar_last {
+            display: block;
+            align-items: left;
+            /* justify-content: space-between; */
+            background: #73777B;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            margin-top: 1.5rem;
+            box-shadow: 3px 3px 10px #0000004d;
         }
     </style>
 </head>
 
 <body>
-
-    <head>
+    <div class="body">
         <div class="inicio">
-            <img class="logo" src="img/logo-inicio-png.png" alt="logomarca">
+            <img class="logo" src="http://10.90.0.191:2021/front/document.send.php?docid=2" alt="logomarca">
         </div>
         <div class=" inicio-status">
             <div class="status">
@@ -222,6 +266,19 @@
                 <h3>N°: ##ticket.id##</h3>
             </div>
         </div>
+        ##FOREACH LAST 1 followups##
+        <div class="acompanhar_last">
+            <div class="data_acompanhamento">
+                <h3>Último acompanhamento: [##followup.date##]</h3>
+            </div>
+            <div class="autor">
+                <h3>Autor(a): ##followup.author##</h3>
+            </div>
+        </div>
+        <div class="acom_descricao">
+            <p>##followup.description##</p>
+        </div>
+        ##ENDFOREACHfollowups##
         <div class="chamado">
             <div class="motivo">
                 <h3>Motivo do Chamado: ##ticket.title##</h3>
@@ -230,73 +287,73 @@
                 <h3>Requerentes: ##ticket.authors##</h3>
             </div>
             <div class="data-inicio">
-                <h3>Requerentes: ##ticket.authors##</h3>
+                <h3>Data Início: ##ticket.creationdate##</h3>
             </div>
         </div>
         <div class="chamado-content">
             <p>##ticket.content##</p>
         </div>
         <div class="online">
-            <a href="https://suporteti.natal.rn.gov.br">
+            <a href="##ticket.url##">
                 <h3>ACOMPANHE O CHAMADO ONLINE!</h3>
             </a>
         </div>
-    </head>
-    ##IFticket.storestatus=5##
-    <div class="solucao">
-        <div class="solu_data">
-            <p>
-            <h3>Solução: ##ticket.solvedate##</h3>
+        ##IFticket.storestatus=5##
+        <div class="solucao">
+            <div class="solu_data">
+                <p>
+                <h3>Solução: ##ticket.solvedate##</h3>
+                </p>
+            </div>
+            <div class="solu_descricao">
+                <p>##ticket.solution.description##</p>
+            </div>
+            <div class="aprovar">
+                <a href="##ticket.urlapprove##">
+                    <h3>APROVAR SOLUÇÃO</h3>
+                </a>
+            </div>
+        </div>
+        <p style="text-align: center;max-width: 620px;"><b>##lang.ticket.autoclosewarning##</b></p>
+        ##ENDIFticket.storestatus##
+        ##FOREACH LAST 5 documents##
+        <div class="documentos">
+            <p><b>Link para download:</b> <a href="##document.downloadurl##">##document.filename##</a>
             </p>
         </div>
-        <div class="solu_descricao">
-            <p>##ticket.solution.description##</p>
+        ##ENDFOREACHdocuments##
+        ##FOREACHfollowups##
+        <div class="acompanhar">
+            <div class="data_acompanhamento">
+                <h3>Acompanhamento: [##followup.date##]</h3>
+            </div>
+            <div class="autor">
+                <h3>Autor(a): ##followup.author##</h3>
+            </div>
         </div>
-        <div class="aprovar">
-            <a href="##ticket.urlapprove##">
-                <h3>APROVAR SOLUÇÃO</h3>
-            </a>
+        <div class="acom_descricao">
+            <p>##followup.description##</p>
         </div>
-    </div>
-    <div class="ult_rejeicao">
-        <p>
-        <h3>Última Rejeição da solução:| ##ticket.solution.approval.date## |</h3>
-        </p>
-    </div>
-    <div class="desc_rejeicao">
-        <p>##ticket.solution.approval.description##</p>
-    </div>
-    <p style="text-align: center;max-width: 620px;"><b>##lang.ticket.autoclosewarning##</b></p>
-    ##ENDIFticket.storestatus##
-    ##FOREACH LAST 5 documents##
-    <div class="documentos">
-        <p><b>Link para download:</b> <a href="##document.downloadurl##">##document.filename##</a>
-        </p>
-    </div>
-    ##ENDFOREACHdocuments##
-    ##FOREACHfollowups##
-    <div class="acompanhar">
-        <div class="data_acompanhamento">
-            <h3>Acompanhamento: [##followup.date##]</h3>
+        ##ENDFOREACHfollowups## ##FOREACHtasks##
+        <div class="tarefas">
+            <div class="data_tarefa">
+                <h3>Tarefa: [##task.date##]</h3>
+            </div>
+            <div class="autor_tarefa">
+                <h3>##task.author##</h3>
+            </div>
         </div>
-        <div class="autor">
-            <h3>Autor(a): ##followup.author##</h3>
+        <div class="desc_tarefa">
+            <p>##task.description##</p>
         </div>
-    </div>
-    <div class="acom_descricao">
-        <p>##followup.description##</p>
-    </div>
-    ##ENDFOREACHfollowups## ##FOREACHtasks##
-    <div class="tarefas">
-        <div class="data_tarefa">
-            <h3>Tarefa: [##task.date##]</h3>
+        <div class="rodape">
+            <a href="https:suporteti.natal.rn.gov.br" target="_blank" style="border: 0; width: 10%; height:auto; "><img
+                    src="http://10.90.0.191:2021/front/document.send.php?docid=3" Logotipo da empresa"></a>
         </div>
-        <div class="autor_tarefa">
-            <h3>##task.author##</h3>
+        <div class="creditos">
+            <p><b>Todos os direitos reservados a PMN - SEMPLA - Secretaria Adjunta de Tecnologia da Informação.</b>
+            </p>
         </div>
-    </div>
-    <div class="desc_tarefa">
-        <p>##task.description##</p>
     </div>
 </body>
 
