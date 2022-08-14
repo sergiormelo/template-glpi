@@ -5,291 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>GLPI</title>
-    <style>
-        .body {
-            max-width: 50rem !important;
-            height: auto;
-            margin: 0 auto;
-            display: block;
-            font-family: 'Roboto Condensed', sans-serif;
-        }
-
-        .body h3 {
-            font-size: 1.2rem;
-        }
-
-        .body p {
-            font-size: 1.1rem;
-        }
-
-        .body img {
-            width: 100%;
-        }
-
-        .inicio {
-            width: 100%;
-            height: auto;
-            background: #1F4690;
-            margin: 2rem 0 auto;
-            display: block;
-            align-items: center;
-            border-top-right-radius: 0.6rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .logo {
-            width: 100%;
-            height: auto;
-
-        }
-
-        .inicio-status {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #fff;
-            color: #1F4690;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .status {
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        .chamado {
-            display: block;
-            align-items: left;
-            background: #36AE7C;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            margin-top: 1.5rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .chamado-content {
-            display: block;
-            align-items: left;
-            background: #fff;
-            color: black;
-            padding: 0.5rem 1rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .online {
-            display: block;
-            align-items: center;
-            background: #1F4690;
-            text-align: center;
-            margin-top: 1.5rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .online a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.15rem;
-            font-family: 'Roboto Condensed', sans-serif;
-        }
-
-        .online button {
-            text-decoration: none;
-            color: #fff;
-            background: #1F4690;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.15rem;
-            width: 100%;
-            padding: 1.2rem;
-            border: none;
-            font-family: 'Roboto Condensed', sans-serif;
-            transform: scale(1);
-        }
-
-        .online button:hover {
-            transform: scale(1.008);
-            transition: all 300ms ease-in-out;
-        }
-
-        .solu_data {
-            display: block;
-            align-items: left;
-            background: #9CB4CC;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            margin-top: 1.5rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .solu_descricao {
-            display: block;
-            align-items: left;
-            background: #fff;
-            color: black;
-            padding: 0.5rem 1rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .aprovar {
-            display: block;
-            align-items: center;
-            background: #1F4690;
-            padding: 0.01%;
-            text-align: center;
-            height: auto;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .aprovar a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.15rem;
-            font-family: 'Roboto Condensed', sans-serif;
-        }
-
-        .aprovar button {
-            text-decoration: none;
-            color: #fff;
-            background: #1F4690;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.15rem;
-            width: 100%;
-            padding: 1.2rem;
-            border: none;
-            font-family: 'Roboto Condensed', sans-serif;
-            transform: scale(1);
-        }
-
-        .aprovar button:hover {
-            transform: scale(1.008);
-            transition: all 300ms ease-in-out;
-        }
-
-        .ult_rejeicao {
-            display: block;
-            align-items: left;
-            /* justify-content: space-between; */
-            background: #EB4747;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            margin-top: 1.5rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .desc_rejeicao {
-            display: block;
-            align-items: left;
-            /* justify-content: space-between; */
-            background: #fff;
-            color: black;
-            padding: 0.5rem 1rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .documentos {
-            display: block;
-            align-items: left;
-            /* justify-content: space-between; */
-            background: #F77E21;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            margin-top: 1.5rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .acompanhar {
-            display: block;
-            align-items: left;
-            /* justify-content: space-between; */
-            background: #E0E0E0;
-            color: black;
-            padding: 0.5rem 1rem;
-            margin-top: 1.5rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .acom_descricao {
-            display: block;
-            align-items: left;
-            background: #fff;
-            color: black;
-            padding: 0.5rem 1rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .tarefas {
-            display: block;
-            align-items: left;
-            /* justify-content: space-between; */
-            background: #E8AA42;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            margin-top: 1.5rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .desc_tarefa {
-            display: block;
-            align-items: left;
-            background: #fff;
-            color: black;
-            padding: 0.5rem 1rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .rodape {
-            display: block;
-            align-items: center;
-            background: #fff;
-            color: #fff;
-            padding: 1.5rem;
-            margin-top: 1.5rem;
-            text-align: center;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .rodape img {
-            width: 25%;
-        }
-
-        .creditos {
-            display: block;
-            align-items: center;
-            background: #1F4690;
-            color: #fff;
-            padding: 0.05rem;
-            text-align: center;
-            margin-bottom: 1rem;
-            border-bottom-left-radius: 0.6rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-
-        .creditos p {
-            font-size: 0.8rem;
-        }
-
-        .acompanhar_last {
-            display: block;
-            align-items: left;
-            /* justify-content: space-between; */
-            background: #73777B;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            margin-top: 1.5rem;
-            box-shadow: 3px 3px 10px #0000004d;
-        }
-    </style>
 </head>
 
 <body>
@@ -313,9 +33,7 @@
             <div class="solu_descricao">
                 <p>##ticket.solution.description##</p>
             </div>
-            <div class="aprovar">
-                <a href="##ticket.urlapprove##"><button><b>SOLUÇÃO</b></button></a>
-            </div>
+            <a class="btn-a" href='##ticket.urlapprove##'><b>APROVAR</b></a>
         </div>
         <p style="text-align: center;"><b>##lang.ticket.autoclosewarning##</b></p>
         ##ENDIFticket.storestatus##
@@ -323,6 +41,32 @@
         <div class="acompanhar_last">
             <div class="data_acompanhamento">
                 <h3>Último acompanhamento: [##followup.date##]</h3>
+            </div>
+            <div class="autor">
+                <h3>Autor(a): ##followup.author##</h3>
+            </div>
+        </div>
+        <div class="acom_descricao">
+            <p>##followup.description##</p>
+        </div>
+        ##ENDFOREACHfollowups####ENDIFticket.storestatus##
+        ##IFticket.storestatus=3####FOREACH LAST 1 followups##
+        <div class="acompanhar_last">
+            <div class="data_acompanhamento">
+                <h3>Último acompanhamento: [##followup.date##]</h3>
+            </div>
+            <div class="autor">
+                <h3>Autor(a): ##followup.author##</h3>
+            </div>
+        </div>
+        <div class="acom_descricao">
+            <p>##followup.description##</p>
+        </div>
+        ##ENDFOREACHfollowups####ENDIFticket.storestatus##
+        ##IFticket.storestatus=4####FOREACH LAST 1 followups##
+        <div class="acompanhar_last tag_pendente">
+            <div class="data_acompanhamento">
+                <h3>Ação Pendente: [##followup.date##]</h3>
             </div>
             <div class="autor">
                 <h3>Autor(a): ##followup.author##</h3>
@@ -340,21 +84,24 @@
                 <h3>Requerentes: ##ticket.authors##</h3>
             </div>
             <div class="data-inicio">
-                <h3>Data Início: ##ticket.creationdate##</h3>
+                <h3>Data Início: [##ticket.creationdate##]</h3>
             </div>
         </div>
         <div class="chamado-content">
             <p>##ticket.content##</p>
         </div>
-        <div class="online">
-            <a href="##ticket.url##" target="_blank"><button><b>ACOMPANHE O CHAMADO ONLINE!</b></button></a>
-        </div>
+        <a class="btn-a btn-pers" href='##ticket.url##'><b>ACOMPANHE O CHAMADO ONLINE!</b></a>
         ##FOREACH LAST 5 documents##
         <div class="documentos">
             <p><b>Link para download:</b> <a href="##document.downloadurl##">##document.filename##</a>
             </p>
         </div>
         ##ENDFOREACHdocuments##
+        ##FOREACH LAST 1 followups##
+        <div class="historico">
+            <h3>HISTÓRICO DO CHAMADO:</h3>
+        </div>
+        ##ENDFOREACHfollowups##
         ##FOREACHfollowups##
         <div class="acompanhar">
             <div class="data_acompanhamento">
@@ -382,7 +129,7 @@
         ##ENDFOREACHtasks##
         <div class="rodape">
             <a href="https:suporteti.natal.rn.gov.br" target="_blank" style="border: 0; width: 10%; height:auto; "><img
-                    src="img/rodape.png" Logotipo da empresa"></a>
+                    src="http://10.90.0.191:2021/front/document.send.php?docid=3" Logotipo da empresa"></a>
         </div>
         <div class="creditos">
             <p><b>Todos os direitos reservados a PMN - SEMPLA - Secretaria Adjunta de Tecnologia da Informação.</b>

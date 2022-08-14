@@ -18,9 +18,7 @@
         <div class="solu_descricao">
             <p>##ticket.solution.description##</p>
         </div>
-            <div class="aprovar">
-                <a href="##ticket.urlapprove##"><button><b>SOLUÇÃO</b></button></a>
-            </div>
+        <a class="btn-a" href='##ticket.urlapprove##'><b>APROVAR</b></a>
     </div>
     <p style="text-align: center;"><b>##lang.ticket.autoclosewarning##</b></p>
     ##ENDIFticket.storestatus##
@@ -28,6 +26,32 @@
     <div class="acompanhar_last">
         <div class="data_acompanhamento">
             <h3>Último acompanhamento: [##followup.date##]</h3>
+        </div>
+        <div class="autor">
+            <h3>Autor(a): ##followup.author##</h3>
+        </div>
+    </div>
+    <div class="acom_descricao">
+        <p>##followup.description##</p>
+    </div>
+    ##ENDFOREACHfollowups####ENDIFticket.storestatus##
+    ##IFticket.storestatus=3####FOREACH LAST 1 followups##
+    <div class="acompanhar_last">
+        <div class="data_acompanhamento">
+            <h3>Último acompanhamento: [##followup.date##]</h3>
+        </div>
+        <div class="autor">
+            <h3>Autor(a): ##followup.author##</h3>
+        </div>
+    </div>
+    <div class="acom_descricao">
+        <p>##followup.description##</p>
+    </div>
+    ##ENDFOREACHfollowups####ENDIFticket.storestatus##
+    ##IFticket.storestatus=4####FOREACH LAST 1 followups##
+    <div class="acompanhar_last tag_pendente">
+        <div class="data_acompanhamento">
+            <h3>Ação Pendente: [##followup.date##]</h3>
         </div>
         <div class="autor">
             <h3>Autor(a): ##followup.author##</h3>
@@ -45,21 +69,24 @@
             <h3>Requerentes: ##ticket.authors##</h3>
         </div>
         <div class="data-inicio">
-            <h3>Data Início: ##ticket.creationdate##</h3>
+            <h3>Data Início: [##ticket.creationdate##]</h3>
         </div>
     </div>
     <div class="chamado-content">
         <p>##ticket.content##</p>
     </div>
-    <div class="online">
-        <a href="##ticket.url##" target="_blank"><button><b>ACOMPANHE O CHAMADO ONLINE!</b></button></a>
-    </div>
+    <a class="btn-a btn-pers" href='##ticket.url##'><b>ACOMPANHE O CHAMADO ONLINE!</b></a>
     ##FOREACH LAST 5 documents##
     <div class="documentos">
         <p><b>Link para download:</b> <a href="##document.downloadurl##">##document.filename##</a>
         </p>
     </div>
     ##ENDFOREACHdocuments##
+    ##FOREACH LAST 1 followups##
+    <div class="historico">
+        <h3>HISTÓRICO DO CHAMADO:</h3>
+    </div>
+    ##ENDFOREACHfollowups##
     ##FOREACHfollowups##
     <div class="acompanhar">
         <div class="data_acompanhamento">
