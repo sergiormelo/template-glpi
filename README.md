@@ -1,4 +1,4 @@
-# Template para GLPI
+# Template e-mail para notificações do GLPI
 Template de e-mail para o GLPI..
 
 ""Em andamento...""
