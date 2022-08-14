@@ -53,6 +53,7 @@
 .status {
     text-align: center;
     margin: 0 auto;
+    max-width: 27.5rem !important;
 }
 
 .chamado {
@@ -133,6 +134,7 @@
     padding: 1.2rem;
     box-shadow: 3px 3px 10px #0000004d;
     display: block;
+    transition: all 300ms ease-in-out;
 }
 
 .btn-a:hover{
