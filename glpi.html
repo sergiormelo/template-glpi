@@ -91,17 +91,17 @@
             <p>##ticket.content##</p>
         </div>
         <a class="btn-a btn-pers" href='##ticket.url##'><b>ACOMPANHE O CHAMADO ONLINE!</b></a>
+        ##FOREACH LAST 1 followups##
+        <div class="historico">
+            <h3>HISTÓRICO DO CHAMADO:</h3>
+        </div>
+        ##ENDFOREACHfollowups##
         ##FOREACH LAST 5 documents##
         <div class="documentos">
             <p><b>Link para download:</b> <a href="##document.downloadurl##">##document.filename##</a>
             </p>
         </div>
         ##ENDFOREACHdocuments##
-        ##FOREACH LAST 1 followups##
-        <div class="historico">
-            <h3>HISTÓRICO DO CHAMADO:</h3>
-        </div>
-        ##ENDFOREACHfollowups##
         ##FOREACHfollowups##
         <div class="acompanhar">
             <div class="data_acompanhamento">
