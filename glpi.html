@@ -19,16 +19,16 @@
         </div>
         <div class=" inicio-status">
             <div class="status">
-                <h3>Status: ##ticket.status##</h3>
+                <h3 class="h3t">Status: ##ticket.status##</h3>
             </div>
             <div class="status">
-                <h3>N°: ##ticket.id##</h3>
+                <h3 class="h3t">N°: ##ticket.id##</h3>
             </div>
         </div>
         ##IFticket.storestatus=5##
         <div class="solucao">
             <div class="solu_data">
-                <h3>Solução: ##ticket.solvedate##</h3>
+                <h3 class="h3t">Solução: ##ticket.solvedate##</h3>
             </div>
             <div class="solu_descricao">
                 <p>##ticket.solution.description##</p>
@@ -40,10 +40,10 @@
         ##IFticket.storestatus=2####FOREACH LAST 1 followups##
         <div class="acompanhar_last">
             <div class="data_acompanhamento">
-                <h3>Último acompanhamento: [##followup.date##]</h3>
+                <h3 class="h3b">Último acompanhamento: [##followup.date##]</h3>
             </div>
             <div class="autor">
-                <h3>Autor(a): ##followup.author##</h3>
+                <h3 class="h3b">Autor(a): ##followup.author##</h3>
             </div>
         </div>
         <div class="acom_descricao">
@@ -53,10 +53,10 @@
         ##IFticket.storestatus=3####FOREACH LAST 1 followups##
         <div class="acompanhar_last">
             <div class="data_acompanhamento">
-                <h3>Último acompanhamento: [##followup.date##]</h3>
+                <h3 class="h3b">Último acompanhamento: [##followup.date##]</h3>
             </div>
             <div class="autor">
-                <h3>Autor(a): ##followup.author##</h3>
+                <h3 class="h3b">Autor(a): ##followup.author##</h3>
             </div>
         </div>
         <div class="acom_descricao">
@@ -66,10 +66,10 @@
         ##IFticket.storestatus=4####FOREACH LAST 1 followups##
         <div class="acompanhar_last tag_pendente">
             <div class="data_acompanhamento">
-                <h3>Ação Pendente: [##followup.date##]</h3>
+                <h3 class="h3t">Ação Pendente: [##followup.date##]</h3>
             </div>
             <div class="autor">
-                <h3>Autor(a): ##followup.author##</h3>
+                <h3 class="h3t">Autor(a): ##followup.author##</h3>
             </div>
         </div>
         <div class="acom_descricao">
@@ -78,13 +78,13 @@
         ##ENDFOREACHfollowups####ENDIFticket.storestatus##
         <div class="chamado">
             <div class="motivo">
-                <h3>Motivo do Chamado: ##ticket.title##</h3>
+                <h3 class="h3t">Motivo do Chamado: ##ticket.title##</h3>
             </div>
             <div class="requerente">
-                <h3>Requerentes: ##ticket.authors##</h3>
+                <h3 class="h3t">Requerentes: ##ticket.authors##</h3>
             </div>
             <div class="data-inicio">
-                <h3>Data Início: [##ticket.creationdate##]</h3>
+                <h3 class="h3t">Data Início: [##ticket.creationdate##]</h3>
             </div>
         </div>
         <div class="chamado-content">
@@ -93,7 +93,7 @@
         <a class="btn-a btn-pers" href='##ticket.url##'><b>ACOMPANHE O CHAMADO ONLINE!</b></a>
         ##FOREACH LAST 1 followups##
         <div class="historico">
-            <h3>HISTÓRICO DO CHAMADO:</h3>
+            <h3 class="h3b">HISTÓRICO DO CHAMADO:</h3>
         </div>
         ##ENDFOREACHfollowups##
         ##FOREACH LAST 5 documents##
@@ -105,10 +105,10 @@
         ##FOREACHfollowups##
         <div class="acompanhar">
             <div class="data_acompanhamento">
-                <h3>Acompanhamento: [##followup.date##]</h3>
+                <h3 class="h3b">Acompanhamento: [##followup.date##]</h3>
             </div>
             <div class="autor">
-                <h3>Autor(a): ##followup.author##</h3>
+                <h3 class="h3b">Autor(a): ##followup.author##</h3>
             </div>
         </div>
         <div class="acom_descricao">
@@ -117,10 +117,10 @@
         ##ENDFOREACHfollowups## ##FOREACHtasks##
         <div class="tarefas">
             <div class="data_tarefa">
-                <h3>Tarefa: [##task.date##]</h3>
+                <h3 class="h3t">Tarefa: [##task.date##]</h3>
             </div>
             <div class="autor_tarefa">
-                <h3>##task.author##</h3>
+                <h3 class="h3t">##task.author##</h3>
             </div>
         </div>
         <div class="desc_tarefa">
