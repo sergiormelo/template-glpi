@@ -294,3 +294,8 @@
     box-shadow: 3px 3px 10px #0000004d;
     text-align: center;
 }
+.MsgBody .Object {
+    color: none !important;
+    text-decoration: none !important;
+    cursor: none !important;
+}
