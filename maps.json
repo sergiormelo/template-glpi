@@ -1,32 +1,32 @@
 [
     {
-      "key": "PS",
+      "key": "Roteador-SEMURB-II-Parque-da-Cidade",
       "latitude": -5.849922372698955,
       "longitude": -35.226936509622355,
       "name": "Parque_da_cidade_SEMURB"
     },
     {
-      "key": "NU",
+      "key": "Roteador-URBANA-Coleta-lixo-ZN",
       "latitude": -5.733110012337864,
       "longitude": -35.25382962990695,
       "name": "Urbana_Nelio_Dias"
     },
     {
-      "key": "AS",
+      "key": "Roteador-SME-Anexo-Sao-Jose",
       "latitude": -5.808110899970405,
       "longitude": -35.21076840112322,
       "name": "SME_Sao_Jose"
     },
     {
-      "key": "CG",
+      "key": "Roteador-Corregedoria-GM",
       "latitude": -5.845515184268209,
       "longitude": -35.20374254321008,
       "name": "Corregedoria_GM"
     },
     {
-      "key": "CB",
+      "key": "Roteador-GM-Nevaldo-Rocha",
       "latitude": -5.807401799738323,
       "longitude": -35.21954578772488,
       "name": "GM_Nevaldo_Rocha"
     }
-  ]
+]
