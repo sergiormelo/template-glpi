@@ -58,5 +58,65 @@
       "latitude": -5.78926,
       "longitude": -35.20708,
       "name": "SEMSUR-RG"
-    }
+    },
+    {
+      "key": "Roteador-SEMTAS-RG",
+      "latitude": -5.80771,
+      "longitude": -35.22028,
+      "name": "SEMTAS-RG"
+    },
+    {
+      "key": "Roteador-SEMUL-RG",
+      "latitude": -5.78936,
+      "longitude": -35.20680,
+      "name": "SEMUL-RG"
+    },
+    {
+      "key": "Roteador-SEMURB-RG",
+      "latitude": -5.81494,
+      "longitude": -35.19896,
+      "name": "SEMURB-RG"
+    },
+    {
+      "key": "Roteador-SEMUT-RG",
+      "latitude": -5.78822,
+      "longitude": -35.20272,
+      "name": "SEMUT-RG"
+    },
+    {
+      "key": "Roteador-SETUR-RG",
+      "latitude": -5.79061,
+      "longitude": -35.19903,
+      "name": "SETUR-RG"
+    },
+    {
+      "key": "Roteador-SME-RG",
+      "latitude": -5.78456,
+      "longitude": -35.19194,
+      "name": "SME-RG"
+    },
+    {
+      "key": "Roteador-SMG-Candel-RG",
+      "latitude": -5.83331,
+      "longitude": -35.21181,
+      "name": "SMG-Candel-RG"
+    },
+    {
+      "key": "Roteador-SMG-RG",
+      "latitude": -5.78439,
+      "longitude": -35.20766,
+      "name": "SMG-RG"
+    },
+    {
+      "key": "Roteador-SMS-RG",
+      "latitude": -5.78549,
+      "longitude": -35.19126,
+      "name": "SMS-RG"
+    },
+    {
+      "key": "Roteador-STTU-RG",
+      "latitude": -5.77639,
+      "longitude": -35.20363,
+      "name": "STTU-RG"
+    },
 ]
