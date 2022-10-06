@@ -16,5 +16,41 @@
       "latitude": -5.7824233,
       "longitude": -35.2014355,
       "name": "NATALPREV-RG"
-    }
+    },
+    {
+      "key": "Roteador-PROCON-RG",
+      "latitude": -5.7775892,
+      "longitude": -35.2048213,
+      "name": "PROCON-RG"
+    },
+    {
+      "key": "Roteador-SEHARPE-RG",
+      "latitude": -5.7893149, 
+      "longitude": -35.2069341,
+      "name": "SEHARPE-RG"
+    },
+    {
+      "key": "Roteador-SEINFRA-RG",
+      "latitude": -5.81016,
+      "longitude": -35.21147,
+      "name": "SEINFRA-RG"
+    },
+    {
+      "key": "Roteador-SEMAD-CGM-RG",
+      "latitude": -5.78633,
+      "longitude": -35.20873,
+      "name": "SEMAD-CGM-RG"
+    },
+    {
+      "key": "Roteador-SEMDES-RG",
+      "latitude": -5.79064,
+      "longitude": -35.19894,
+      "name": "SEMDES-RG"
+    },
+    {
+      "key": "Roteador-SEMPLA-RG",
+      "latitude": -5.80292,
+      "longitude": -35.20364,
+      "name": "SEMPLA-RG"
+    },
 ]
