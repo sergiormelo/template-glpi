@@ -6,9 +6,15 @@
       "name": "PGM-RG"
     },
     {
-      "key": "Rede-CGM-RG",
+      "key": "Roteador-CGM-RG",
       "latitude": -5.7863340,
       "longitude": -35.2087339,
       "name": "CGM-RG"
+    },
+    {
+      "key": "Roteador-NATALPREV-RG",
+      "latitude": -5.7824233,
+      "longitude": -35.2014355,
+      "name": "NATALPREV-RG"
     }
 ]
