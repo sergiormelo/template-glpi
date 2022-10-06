@@ -3,6 +3,12 @@
       "key": "Roteador-PGM-RG",
       "latitude": -5.78923,
       "longitude": -35.20723,
-      "name": "Teste_PGM"
+      "name": "PGM-RG"
+    },
+    {
+      "key": "Rede-CGM-RG",
+      "latitude": -5,7863340,
+      "longitude": -35,2087339,
+      "name": "CGM-RG"
     }
 ]
