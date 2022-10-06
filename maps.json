@@ -53,4 +53,10 @@
       "longitude": -35.20364,
       "name": "SEMPLA-RG"
     },
+    {
+      "key": "Roteador-SEMSUR-RG",
+      "latitude": -5.78926,
+      "longitude": -35.20708,
+      "name": "SEMSUR-RG"
+    }
 ]
