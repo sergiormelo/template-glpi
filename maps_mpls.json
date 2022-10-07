@@ -1,0 +1,74 @@
+[
+    {
+      "key": "Roteador-Almoxarifado-SME",
+      "latitude": -5.85067,
+      "longitude": -35.21065,
+      "name": "Almoxarifado-SME"
+    },
+    {
+      "key": "Roteador-Arquivo-Geral",
+      "latitude": -5.77748,
+      "longitude": -35.20507,
+      "name": "Arquivo-Geral"
+    },
+    {
+      "key": "Roteador-ARSBAN",
+      "latitude": -5.78557,
+      "longitude": -35.20845,
+      "name": "ARSBAN"
+    },
+    {
+      "key": "Roteador-FUNCARTE",
+      "latitude": -5.78219,
+      "longitude": -35.20703,
+      "name": "FUNCARTE"
+    },
+    {
+      "key": "Roteador-FUNCATE-MUSEU",
+      "latitude": -5.77972,
+      "longitude": -35.20566,
+      "name": "FUNCATE-MUSEU"
+    },
+    {
+      "key": "Roteador-GM-Nevaldo-Rocha",
+      "latitude": -5.80305,
+      "longitude": -35.23153,
+      "name": "GM-Nevaldo-Rocha"
+    },
+    {
+      "key": "Roteador-Palacio-dos-esportes-SEL",
+      "latitude": -5.78400,
+      "longitude": -35.20145,
+      "name": "Palacio-dos-esportes-SEL"
+    },
+    {
+      "key": "Roteador-SEMTAS-Casa-Acolhimento-I",
+      "latitude": -5.83352,
+      "longitude": -35.21332,
+      "name": "SEMTAS-Casa-Acolhimento-I"
+    },
+    {
+      "key": "Roteador-SEMTAS-CASA-DOS-CONSELHOS",
+      "latitude": -3.72550,
+      "longitude": -38.49056,
+      "name": "SEMTAS-CASA-DOS-CONSELHOS"
+    },
+    {
+      "key": "Roteador-SEMTAS-Centro-Conv.-Idoso-Ivone-Alves",
+      "latitude": -5.73328,
+      "longitude": -35.25856,
+      "name": "SEMTAS-Centro-Conv.-Idoso-Ivone-Alves"
+    },
+    {
+      "key": "Roteador-SEMTAS-CPTR_Cid_Alta",
+      "latitude": -5.80227,
+      "longitude": -35.21479,
+      "name": "SEMTAS-CPTR_Cid_Alta"
+    },
+    {
+      "key": "Roteador-SEMTAS-LGBTQ",
+      "latitude": -5.81858,
+      "longitude": -35.20666,
+      "name": "SEMTAS-LGBTQ"
+    },
+]
