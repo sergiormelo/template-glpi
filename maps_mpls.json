@@ -71,4 +71,58 @@
       "longitude": -35.20666,
       "name": "SEMTAS-LGBTQ"
     },
+    {
+      "key": "Roteador-SEMUL-CA",
+      "latitude": -5.8124,
+      "longitude": -35.2108,
+      "name": "SEMUL-CA"
+    },
+    {
+      "key": "Roteador-SEMUL-Centro-Referencia-Elizabeth-Nasser",
+      "latitude": -5.80287,
+      "longitude": -35.23166,
+      "name": "SEMUL-Centro-Referencia-Elizabeth-Nasser"
+    },
+    {
+      "key": "Roteador-SEMURB-II-Parque-da-Cidade",
+      "latitude": -5.85167,
+      "longitude": -35.22808,
+      "name": "SEMURB-II-Parque-da-Cidade"
+    },
+    {
+      "key": "Roteador-SME-Anexo-Sao-Jose",
+      "latitude": -5.8274,
+      "longitude": -35.21813,
+      "name": "SME-Anexo-Sao-Jose"
+    },
+    {
+      "key": "Roteador-SME-CEMURE",
+      "latitude": -5.79769,
+      "longitude": -35.21868,
+      "name": "SME-CEMURE"
+    },
+    {
+      "key": "Roteador-STTU-DEDT",
+      "latitude": -5.87284,
+      "longitude": -35.22633,
+      "name": "STTU-DEDT"
+    },
+    {
+      "key": "Roteador-URBANA",
+      "latitude": -5.79981,
+      "longitude": -35.23769,
+      "name": "URBANA"
+    },
+    {
+      "key": "Roteador-URBANA-Aterro",
+      "latitude": -5.84452,
+      "longitude": -35.25368,
+      "name": "URBANA-Aterro"
+    },
+    {
+      "key": "Roteador-URBANA-Coleta-lixo-ZN",
+      "latitude": -5.73331,
+      "longitude": -35.25393,
+      "name": "URBANA-Coleta-lixo-ZN"
+    }
 ]
