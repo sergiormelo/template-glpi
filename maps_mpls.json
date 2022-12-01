@@ -124,5 +124,11 @@
       "latitude": -5.73331,
       "longitude": -35.25393,
       "name": "URBANA-Coleta-lixo-ZN"
+    },
+    {
+      "key": "Roteador-FUNCARTE-Memorial_Parque_Cidade",
+      "latitude": -5.85221,
+      "longitude": -35.22782,
+      "name": "Memorial_Parque_Cidade"
     }
 ]
